@@ -62,6 +62,7 @@ def tts(text, keep = False):
         if not keep:
             os.unlink(filename)
         else:
+            print("The audio is in %s" % filename)
             return filename
 
 def main(loop: ("Continue reading lines and speaking the contents", "flag", "l"),
@@ -71,9 +72,7 @@ def main(loop: ("Continue reading lines and speaking the contents", "flag", "l")
     init()
     if text:
         concat = " ".join(text)
-        wavfile = tts(concat, keep)
-    if keep:
-        print("The audio is in %s" % wavfile)
+        tts(concat, keep)
     while loop:
         try:
             if int(sys.version[0]) >= 3:
@@ -82,9 +81,7 @@ def main(loop: ("Continue reading lines and speaking the contents", "flag", "l")
                 text = sys.stdin.readline()
         except EOFError:
             sys.exit()
-        wavfile = tts(text, keep)
-        if keep:
-            print("The audio is in %s" % wavfile)
+        tts(text, keep)
 
 
 if __name__ == '__main__':
