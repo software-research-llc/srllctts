@@ -40,9 +40,9 @@ def init():
 
 def tts(text, keep = False):
     """Perform text-to-speech on a given string"""
-    sys.stderr.write("Processing '%s'...\n" % text)
 
     # preprocess the input
+    print("Processing '%s'..." % text)
     sequence = np.array(tacotron2.text_to_sequence(text, ['english_cleaners']))[None, :]
     sequence = torch.from_numpy(sequence).to(device='cuda', dtype=torch.int64)
 
