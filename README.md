@@ -9,9 +9,9 @@ Please note that this is not a maintained project.
 
 Links
 -----
-[NVIDIA's WaveGlow example](https://pytorch.org/hub/nvidia_deeplearningexamples_waveglow/)
-[Natural TTS Synthesis by Conditioning WaveNet on Mel Spectrogram Predictions](https://arxiv.org/abs/1712.05884)
-[WaveGlow: A Flow-based Generative Network for Speech Synthesis](https://arxiv.org/abs/1811.00002)
+- [NVIDIA's WaveGlow example](https://pytorch.org/hub/nvidia_deeplearningexamples_waveglow/)
+- [Natural TTS Synthesis by Conditioning WaveNet on Mel Spectrogram Predictions](https://arxiv.org/abs/1712.05884)
+- [WaveGlow: A Flow-based Generative Network for Speech Synthesis](https://arxiv.org/abs/1811.00002)
 
 Samples of the output
 ---------------------
