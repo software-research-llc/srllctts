@@ -5,7 +5,9 @@ using the LJ Speech dataset.  Just a quick little thing that we thought was neat
 
 Some of the code is taken directly from NVIDIA's TorchHub example (see links).
 
-Please note that this is not a maintained project.
+Please note that this is not a maintained project.  Additionally, it also no longer represents state-of-the-art; while I haven't taken the time to investigate the following, it may be of interest:
+
+[MelGAN Vocoder code](https://github.com/seungwonpark/melgan), and [paper](https://arxiv.org/abs/1910.06711). 
 
 Links
 -----
@@ -15,7 +17,7 @@ Links
 
 Samples of the output
 ---------------------
-[Decent: knuth.wav](knuth.wav)
+[Decent: knuth.wav](knuth.wav)  
 [Really bad: shakespeare.wav](shakespeare.wav)
 
 Dependencies
